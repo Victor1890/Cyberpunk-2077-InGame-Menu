@@ -50,7 +50,9 @@ The file `font.css` is here where configured the fonts in the website
     src: url("../fonts/Cyberpunk.ttf"),url("../fonts/Cyberpunk.otf");
 }
 ```
+## Screenshot
 
+![](design/Cyberpunk2077.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
