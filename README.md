@@ -28,15 +28,15 @@ Using VSCode, open the files `index.html` and `style.css`
 <div class="menu">
     <div class="logo">
     cyberpunk
-    <div class="sublogo">2077</div>
+        <div class="sublogo">2077</div>
     </div>
 
     <ul>
-    <li>Continue</li>
-    <li>New Game</li>
-    <li>Load Game</li>
-    <li>Settings</li>
-    <li>Credits</li>
+        <li>Continue</li>
+        <li>New Game</li>
+        <li>Load Game</li>
+        <li>Settings</li>
+        <li>Credits</li>
     </ul>
 </div>
 ```
