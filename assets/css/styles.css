@@ -1,0 +1,123 @@
+:root{
+    --red: rgba(211, 87, 91, 0.81);
+    --red-glow: rgba(211, 87, 91, 0.91);
+    --red-scanline: rgba(204, 94, 98, 0.2);
+    --black-scanline: rgba(1, 1, 1, 0.9);
+    --black-hover-background: rgba(0, 0, 0, 0.25);
+    --blue: #61e4fa;
+    --yellow: #f7f500;
+    --text-shadow: rgb(0, 208, 255);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+    display: block;
+    font-family: "GinesoSoft";
+}
+body{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+}
+.menu{
+    width: 400px;
+    height: 100%;
+    margin-left: 150px;
+    display: inline-block;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--red-scanline) 1px,
+        var(--red-scanline) 4px,
+        var(--red-scanline) 5px,
+        transparent 0%
+    ),
+    repeating-linear-gradient(
+        to left,
+        var(--black-scanline),
+        var(--black-scanline) 100%
+    );
+}
+.logo{
+    font-family: "Cyberpunk";
+    color: var(--yellow);
+    font-size: 42px;
+    text-shadow: var(--text-shadow) 2px 3px 0px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+.sublogo{
+    font-family: "GinesoSoft";
+    font-size: 24px;
+    color: var(--text-shadow);
+    text-shadow: none;
+    text-align: right;
+    letter-spacing: 25px;
+    padding-right: 15px;
+}
+.menu li{
+    list-style-type: none;
+    padding: 0px 25px;
+}
+.menu ul li{
+    text-transform: uppercase;
+    cursor: pointer;
+
+    /*layout*/
+    position: relative;
+    padding: 10px;
+    margin: 15px 0px;
+    width: 350px;
+    height: 54.5px;
+    clip-path: polygon(350px 0px, 350px 29px, 322px 57px, 0px 57px, 0px 0px);
+    margin-left: 15px;
+
+    font-family: "GinesoSoft";
+    color: var(--red);
+    font-size: 26px;
+    text-shadow: 0 0 3px var(--red-glow);
+
+    /* Border */
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+
+    /* Animation */
+    transition: color 1s ease-out;
+    transition: border-color 1s ease-out;
+}
+.menu ul li:hover,
+.menu ul li:hover::after{
+    color: var(--blue);
+    border-color: var(--blue);
+
+    background: var(--black-hover-background);
+
+    /* Animations */
+    transition: color .23s linear;
+    transition: border-color .23s linear;
+}
+.menu ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    right: -17px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+  
+    /* border */
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+
+    /* Animations */
+    transition: color 1s linear;
+    transition: border-color 1s linear;
+}
