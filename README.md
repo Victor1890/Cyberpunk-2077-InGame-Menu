@@ -1,7 +1,5 @@
 # Cyberpunk2077 InGame Menu
 
-Foobar is a Python library for dealing with word pluralization.
-
 ## Installation
 
 Use the package control version [git](https://git-scm.com/downloads).
